@@ -1,0 +1,12 @@
+<div class="row overflow-auto" style="max-height: calc(100vh - 110px);">
+
+  <div
+    *ngFor="let item of gifs"
+    class="col-md-3 col-sm-6 mb-2"
+    >
+
+    <gifs-image-card [gifItem]="item"></gifs-image-card>
+
+  </div>
+
+</div>

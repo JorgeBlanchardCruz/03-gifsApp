@@ -1,0 +1,17 @@
+<div class="text-center">
+  <div class="card bg-dark">
+
+    <!-- <img
+    class="card-img-top"
+    [src]="gifItem.images.downsized_medium.url"
+    alt="Card image cap"> -->
+
+    <shared-lazy-image
+     [url]="gifItem.images.downsized_medium.url"
+     [alt]="gifItem.title || 'No title'">
+    </shared-lazy-image>
+
+    <div class="card-body">
+      <p class="card-text text-light" [textContent]="gifItem.title || 'No title'"></p>
+  </div>
+</div>
